@@ -1,0 +1,105 @@
+/*
+
+Template Name: English Dictionary
+Template Url: https://fate92ma.github.io/English-Dictionary
+Contact Me: fatema131khaled@gmail.com
+
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Helvetica&display=swap');
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    font-family: "Helvetica" !important
+}
+
+/* Start Styling */
+
+body {
+    background: linear-gradient(to left, #dddddd 0%, #ffffcc 100%)
+}
+
+main {
+    margin: 120px 0
+}
+
+.intro input {
+    width: 100%;
+    outline: 0;
+    border: 1px solid #ccc;
+    padding: 8px;
+    margin: 30px auto;
+    display: block
+}
+
+.intro h1 {
+    text-align: center;
+    color: #c43d16
+}
+
+.intro,
+.wordInfo,
+.words {
+    font-size: 20px;
+    width: 50vw;
+    margin: auto
+}
+
+.words div {
+    margin-top: 40px
+}
+
+.wordInfo p:nth-of-type(2),
+.words div p:nth-of-type(2) {
+    line-height: 26px;
+    margin: 10px 0
+}
+
+.wordInfo p span,
+b {
+    font-weight: bold;
+    color: #c43d16
+}
+
+center {
+    font-size: 24px;
+    color: red;
+    font-weight: bold
+}
+
+@media (max-width: 1150px) {
+
+    .intro,
+    .wordInfo,
+    .words {
+        width: 60vw
+    }
+}
+
+@media (max-width: 950px) {
+
+    .intro,
+    .wordInfo,
+    .words {
+        width: 70vw
+    }
+}
+
+@media (max-width: 750px) {
+
+    .intro,
+    .wordInfo,
+    .words {
+        width: 85vw
+    }
+}
+
+/* End Styling */
