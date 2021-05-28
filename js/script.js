@@ -1,4 +1,5 @@
 // Dom Variables
+
 let input = document.getElementsByTagName("input")[0],
 
     inputValue,
@@ -8,6 +9,7 @@ let input = document.getElementsByTagName("input")[0],
     words = document.getElementsByClassName("words")[0],
 
     // Data Variables
+
     myRequest,
 
     myData;
@@ -15,8 +17,6 @@ let input = document.getElementsByTagName("input")[0],
 // Events
 
 input.addEventListener("keypress", getWord);
-
-/**************************************************************************************************/
 
 // function to get user word to search for its definition
 function getWord() {
@@ -36,8 +36,6 @@ function getWord() {
     else return false
 
 }
-
-/**************************************************************************************************/
 
 // function to get data for a word
 function getData() {
@@ -80,8 +78,6 @@ function getData() {
 
 }
 
-/**************************************************************************************************/
-
 // function to draw data in dom
 function drawInUI(object, whereToDraw1, whereToDraw2) {
 
@@ -107,16 +103,14 @@ function drawInUI(object, whereToDraw1, whereToDraw2) {
             example = item.example;
 
         whereToDraw2.innerHTML += `<div>
-<p><strong>Type: </strong> ${type}</p>
-<p><strong>Definition: </strong> ${definition}</p>
-<p><strong>Example: </strong> ${example}</p>
-</div>`
+                                     <p><strong>Type: </strong> ${type}</p>
+                                     <p><strong>Definition: </strong> ${definition}</p>
+                                     <p><strong>Example: </strong> ${example}</p>
+                                   </div>`
 
     })
 
 }
-
-/**************************************************************************************************/
 
 // function to run if there is no data to draw
 function drawError(array, clearDiv, whereToDraw) {
@@ -132,5 +126,3 @@ function drawError(array, clearDiv, whereToDraw) {
     whereToDraw.innerHTML = `<center>${message}</center>`
 
 }
-
-/**************************************************************************************************/

@@ -17,14 +17,14 @@ Contact Me: fatema131khaled@gmail.com
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     -ms-box-sizing: border-box;
-    -o-box-sizing: border-box;
-    font-family: "Helvetica" !important
+    -o-box-sizing: border-box
 }
 
 /* Start Styling */
 
 body {
-    background: linear-gradient(to left, #dddddd 0%, #ffffcc 100%)
+    background: linear-gradient(to left, #dddddd 0%, #ffffcc 100%);
+    font-family: "Helvetica"
 }
 
 main {
@@ -50,6 +50,7 @@ main {
 .words {
     font-size: 20px;
     width: 50vw;
+    padding: 10px;
     margin: auto
 }
 
@@ -64,7 +65,7 @@ main {
 }
 
 .wordInfo p span,
-b {
+.wordInfo p strong {
     font-weight: bold;
     color: #c43d16
 }
@@ -75,7 +76,11 @@ center {
     font-weight: bold
 }
 
-@media (max-width: 1150px) {
+/* End Styling */
+
+/* Start Media Query */
+
+@media (max-width: 1200px) {
 
     .intro,
     .wordInfo,
@@ -84,7 +89,7 @@ center {
     }
 }
 
-@media (max-width: 950px) {
+@media (max-width: 1024px) {
 
     .intro,
     .wordInfo,
@@ -93,13 +98,13 @@ center {
     }
 }
 
-@media (max-width: 750px) {
+@media (max-width: 768px) {
 
     .intro,
     .wordInfo,
     .words {
-        width: 85vw
+        width: 92vw
     }
 }
 
-/* End Styling */
+/* End Media Query */
